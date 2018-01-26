@@ -1,0 +1,37 @@
+@import 'variables';
+
+.PrimaryButton {
+    background: linear-gradient(-90deg, darken($primary,10), $primary); /* Standard syntax (must be last) */
+    color: darken($bg-color, 5);
+    font-weight: 520;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px lighten($text,5);
+    border: none;
+    &:hover {
+        color: darken($bg-color, 5);
+        box-shadow: 2px 2px 15px lighten($text,15);;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.SecondaryButton {
+    background: linear-gradient(-90deg, darken($secondary,10), $secondary); /* Standard syntax (must be last) */
+    color: darken($bg-color, 5);
+    font-weight: 520;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px lighten($text,5);
+    border: none;
+    &:hover {
+        color: darken($bg-color, 5);
+        box-shadow: 2px 2px 15px lighten($text,15);;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

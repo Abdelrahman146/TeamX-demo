@@ -1,0 +1,27 @@
+@import '../variables';
+
+
+footer {
+    margin: 0 auto !important;
+    padding: 0;
+    .footer {
+        padding: 0;
+        margin: 0;
+    }
+    .footer-text {
+        h3 {
+            background: linear-gradient(0deg,lighten($primary,40), transparent);
+            text-align: center; 
+            font-weight: 200;
+            font-size: 20px;
+            margin: 0;
+            padding: 20px;
+            .dev {
+                font-weight: 500;
+                text-decoration: underline;
+            }
+            
+        }
+    }
+    
+}

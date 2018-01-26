@@ -1,0 +1,62 @@
+@import '../variables';
+.box {
+    height: 812px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: linear-gradient(-90deg, $primary, $secondary); /* Standard syntax (must be last) */
+    box-shadow: 0px 5px 10px lighten($text, 40);
+    background-size: 150%;
+    animation: colorspin 15s ease infinite;
+    &:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 812px;
+        z-index: 1;
+        opacity: 0.1;
+        background-image: url(../../media/styles/samuel-zeller-158996-compressed.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    .welcome-text {
+        z-index: 2;
+        position: relative;
+        top: 250px;
+        text-align: center;
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            color: $bg-color;
+            text-shadow: 2px 2px 10px $text;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 3.5rem;
+            color: $bg-color;
+            margin-bottom: 5px;
+        }
+        h4 {
+            font-weight: 600;
+            color: darken($bg-color,10);
+        }
+        p {
+            color: darken($bg-color,20);
+            text-shadow: 2px 2px 5px $text;
+        }
+    }
+    
+}
+
+@keyframes colorspin {
+    25%{background-position: 0 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0 50%}
+}
