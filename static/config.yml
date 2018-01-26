@@ -1,7 +1,8 @@
 
 
 backend:
-  name: test-repo
+  name: github
+  repo: Abdelrahman146/TeamX-demo
 
 media_folder: static/assets
 
