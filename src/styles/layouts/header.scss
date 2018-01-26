@@ -19,7 +19,7 @@ header {
         width: 100px;
     }
     li {
-        margin-bottom: 0;
+        margin-bottom: 0; 
         a {
             color: $bg-color;
             &:hover {
@@ -28,7 +28,9 @@ header {
                 border-bottom: $bg-color solid 1px;
             }
         }
+
     }
 }
+
 
 
